@@ -8,5 +8,5 @@ void main()
     printf("Enter the Second number for addition : ");
     scanf("%f",&b);
     sum = a+b;
-    printf("The Sum of the two numbers is : %f",sum);
+    printf("The Sum of %f & %f is : %f",a,b,sum);
 }
