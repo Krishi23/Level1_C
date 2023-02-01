@@ -1,7 +1,7 @@
 #include<stdio.h>
  
-int first_num();
-int second_num();
+float first_num();
+float second_num();
 void addition(float x, float y); 
 
 int main()
@@ -14,14 +14,14 @@ int main()
     return 0;
 }
 
-int first_num()
+float first_num()
 {   float x;
     printf("Enter the first number : ");
     scanf("%f",&x);
     return x;
 }
 
-int second_num()
+float second_num()
 {
     float y;
     printf("Enter the second number : ");
