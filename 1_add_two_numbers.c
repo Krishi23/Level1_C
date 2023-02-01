@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main() 
+int main() 
 {
     float a,b,sum;
     printf("*********Addition of two numbers***********\n");
@@ -9,4 +9,5 @@ void main()
     scanf("%f",&b);
     sum = a+b;
     printf("The Sum of %f & %f is : %f",a,b,sum);
+    return 0;
 }
