@@ -1,8 +1,8 @@
 #include<stdio.h>
  
 float input();
-float addition(float x, float y); 
-void output(float sum, float x, float y);
+float addition(float num1, float num2); 
+void output(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
