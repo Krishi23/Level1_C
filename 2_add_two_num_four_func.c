@@ -30,6 +30,6 @@ float addition(float num1, float num2)
 
 void output(float sum, float num1, float num2)
 {
-    printf("The Sum of %.2f and %.2f is : %.2f",num1,num2,sum);
+    printf("The Sum of %.2f and %.2f is : %.2f",num1,num2,sum );
 }
 
