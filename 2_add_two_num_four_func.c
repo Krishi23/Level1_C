@@ -33,3 +33,4 @@ void output(float sum, float num1, float num2)
     printf("The Sum of %.2f and %.2f is : %.2f",num1,num2,sum );
 }
 
+//    A FUNCTION CAN EXECUTE ONE NAMEABLE TASK FOR n NUMBER OF TIMES AND CAN BE CALLED AGAIN AND AGAIN   //
