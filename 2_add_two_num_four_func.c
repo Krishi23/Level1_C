@@ -5,31 +5,31 @@ float addition(float x, float y);
 void output(float sum, float x, float y);
 
 int main()
-{   float a,b,sum;
+{   float first_num,second_num,sum;
     printf("******  ADDITION OF TWO NUMBERS  ******\n");
-    a = input();
-    b = input();
-    sum = addition(a,b);
-    output(sum,a,b);
+    first_num = input();
+    second_num = input();
+    sum = addition(first_num,second_num);
+    output(sum,first_num,second_num);
     return 0;
 }
 
 float input()
-{   float x;
+{   float num;
     printf("Enter the number : ");
-    scanf("%f",&x);
-    return x;
+    scanf("%f",&num);
+    return num;
 }
 
-float addition(float x, float y)
+float addition(float num1, float num2)
 {
     float sum;
-    sum = x+y;
+    sum = num1+num2;
     return sum;
 }
 
-void output(float sum, float a, float b)
+void output(float sum, float num1, float num2)
 {
-    printf("The Sum of %.2f and %.2f is : %.2f",a,b,sum);
+    printf("The Sum of %.2f and %.2f is : %.2f",num1,num2,sum);
 }
 
