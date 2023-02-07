@@ -1,37 +1,35 @@
 #include<stdio.h>
  
-float first_num();
-float second_num();
-void addition(float x, float y); 
+float input();
+float addition(float x, float y); 
+void output(float sum, float x, float y);
 
 int main()
-{
-    float a,b;
-    printf("-----Addition of Two Numbers-----\n");
-    a=first_num();
-    b=second_num();
-    addition(a,b);
+{   float a,b,sum;
+    printf("******  ADDITION OF TWO NUMBERS  ******\n");
+    a = input();
+    b = input();
+    sum = addition(a,b);
+    output(sum,a,b);
     return 0;
 }
 
-float first_num()
+float input()
 {   float x;
-    printf("Enter the first number : ");
+    printf("Enter the number : ");
     scanf("%f",&x);
     return x;
 }
 
-float second_num()
-{
-    float y;
-    printf("Enter the second number : ");
-    scanf("%f",&y);
-    return y;
-}
-
-void addition(float x, float y)
+float addition(float x, float y)
 {
     float sum;
     sum = x+y;
-    printf("The sum of %.2f & %.2f is %.2f",x,y,sum);
+    return sum;
 }
+
+void output(float sum, float a, float b)
+{
+    printf("The Sum of %.2f and %.2f is : %.2f",a,b,sum);
+}
+
