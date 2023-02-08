@@ -1,22 +1,22 @@
 #include<stdio.h>
  
-float input_num(char num_order[]);
+float input_num(int n, char ordinal_num[]);
 float addition(float num1, float num2); 
 void output(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
-    first_num = input_num("1st");
-    second_num = input_num("2nd");
+    first_num = input_num(1,"st");
+    second_num = input_num(2,"nd");
     sum = addition(first_num,second_num);
     output(sum,first_num,second_num);
     return 0;
 }
 
-float input_num(char c[])
+float input_num(int n, char ordinal_num[])
 {  
     float num;
-    printf("Enter the %s number for addition : ",c);
+    printf("Enter the %d%s number for addition : ",n,c);
     scanf("%f",&num);
     return num;
 }
