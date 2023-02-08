@@ -1,15 +1,13 @@
 #include<stdio.h>
  
-float input(char c[]);
+float input(char num_order[]);
 float addition(float num1, float num2); 
 void output(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
-    char first[] = "first";
-    char second[] = "second";
-    first_num = input(first);
-    second_num = input(second);
+    first_num = input("1st");
+    second_num = input("2nd");
     sum = addition(first_num,second_num);
     output(sum,first_num,second_num);
     return 0;
