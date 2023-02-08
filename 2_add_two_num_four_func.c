@@ -17,7 +17,7 @@ int main()
 
 float input(char c[])
 {   float num;
-    printf("Enter the %c number for addition : ",c);
+    printf("Enter the %s number for addition : ",c);
     scanf("%f",&num);
     return num;
 }
@@ -35,3 +35,5 @@ void output(float sum, float num1, float num2)
 }
 
 //    A FUNCTION CAN EXECUTE ONE NAMEABLE TASK FOR n NUMBER OF TIMES BY CALLING IT n TIMES   //
+
+//    THIS TASK WAS ABOUT HOW CAN U CALL A FUNCTION AGAIN TO DO THE SAME TASK AND NOT TO DECLARE ANOTHER ONE     //
