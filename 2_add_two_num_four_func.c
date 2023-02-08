@@ -1,19 +1,19 @@
 #include<stdio.h>
  
-float input_num(int n, char ordinal_suffix[]);
+float input_ith_num(int ith_num, char ordinal_suffix[]);
 float addition(float num1, float num2); 
 void output(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
-    first_num = input_num(1,"st");
-    second_num = input_num(2,"nd");
+    first_num = input_ith_num(1,"st");
+    second_num = input_ith_num(2,"nd");
     sum = addition(first_num,second_num);
     output(sum,first_num,second_num);
     return 0;
 }
 
-float input_num(int n, char ordinal_suffix[])
+float input_ith_num(int ith_num, char ordinal_suffix[])
 {  
     float num;
     printf("Enter the %d%s number for addition : ",n,c);
