@@ -9,7 +9,7 @@ int main()
     first_num = input_ith_num(1,"st");
     second_num = input_ith_num(2,"nd");
     sum = addition(first_num,second_num);
-    output(sum,first_num,second_num);
+    output_sum(sum,first_num,second_num);
     return 0;
 }
 
