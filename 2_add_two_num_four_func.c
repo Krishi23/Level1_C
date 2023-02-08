@@ -2,7 +2,7 @@
  
 float input_ith_num(int ith_num, char ordinal_suffix[]);
 float addition(float num1, float num2); 
-void output(float sum, float num1, float num2);
+void output_sum(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
@@ -28,7 +28,7 @@ float addition(float num1, float num2)
     return sum;
 }
 
-void output(float sum, float num1, float num2)
+void output_sum(float sum, float num1, float num2)
 {
     printf("The Sum of %.2f and %.2f is : %.2f",num1,num2,sum);
 }
