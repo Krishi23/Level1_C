@@ -1,23 +1,33 @@
 #include<stdio.h>
  
-float input();
+float input(int x);
 float addition(float num1, float num2); 
 void output(float sum, float num1, float num2);
 
 int main()
 {   float first_num,second_num,sum;
-    printf("******  ADDITION OF TWO NUMBERS  ******\n");
-    first_num = input();
-    second_num = input();
+    int a,b;
+    a=1;
+    b=2;
+    first_num = input(a);
+    second_num = input(b);
     sum = addition(first_num,second_num);
     output(sum,first_num,second_num);
     return 0;
 }
 
-float input()
+float input(int x)
 {   float num;
-    printf("Enter the number : ");
-    scanf("%f",&num);
+    if(x==1)
+    {
+        printf("Enter the first number for addition : ");
+        scanf("%f",&num);
+    }
+    else if(x==2)
+    {
+        printf("Enter the second number for addition : ");
+        scanf("%f",&num);
+    }
     return num;
 }
 
