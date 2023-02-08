@@ -16,7 +16,7 @@ int main()
 float input_ith_num(int ith_num, char ordinal_suffix[])
 {  
     float num;
-    printf("Enter the %d%s number for addition : ",ith_num,c);
+    printf("Enter the %d%s number for addition : ",ith_num,ordinal_suffix);
     scanf("%f",&num);
     return num;
 }
