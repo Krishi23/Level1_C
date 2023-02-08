@@ -1,6 +1,6 @@
 #include<stdio.h>
  
-float input_num(int n, char ordinal_num[]);
+float input_num(int n, char ordinal_suffix[]);
 float addition(float num1, float num2); 
 void output(float sum, float num1, float num2);
 
@@ -13,7 +13,7 @@ int main()
     return 0;
 }
 
-float input_num(int n, char ordinal_num[])
+float input_num(int n, char ordinal_suffix[])
 {  
     float num;
     printf("Enter the %d%s number for addition : ",n,c);
