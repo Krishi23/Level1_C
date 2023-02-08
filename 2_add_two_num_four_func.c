@@ -13,7 +13,7 @@ int main()
     return 0;
 }
 
-float input(char c[])
+float input_num(char c[])
 {  
     float num;
     printf("Enter the %s number for addition : ",c);
